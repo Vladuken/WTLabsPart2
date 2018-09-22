@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 public class Task2Test {
 
     @Test
-    public void isIn() {
+    public void testIsIn() {
         Task2 task = new Task2();
         assertEquals(true,task.isIn(0,0));
         assertEquals(true,task.isIn(2,1));
