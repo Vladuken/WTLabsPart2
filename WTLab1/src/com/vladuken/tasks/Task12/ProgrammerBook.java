@@ -5,8 +5,8 @@ public class ProgrammerBook extends Book{
     private String language;
     private Integer level;
 
-    public ProgrammerBook(String title, String author, Integer price,String language, Integer level){
-        super(title, author, price);
+    public ProgrammerBook(String title, String author, Integer price,Integer isbn,String language, Integer level){
+        super(title, author, price,isbn);
         this.language = language;
         this.level = level;
     }

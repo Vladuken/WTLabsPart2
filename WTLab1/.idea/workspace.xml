@@ -2,33 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d02cd8fb-6326-489b-af82-33956407e9c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/ProgrammerBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookAuthorComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookPriceComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookTitleComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/com/vladuken/tasks/Task12/BookComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/com/vladuken/tasks/Task12/BookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WTLab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WTLab1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task1/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task2/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task3/Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task4/Prime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task4/Prime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task4/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task4/Task4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task5/Task5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task6/Task6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task7/Task7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task8/Task8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task9/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/classes/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task9/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/classes/Basket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Task9/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/classes/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/AllTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/AllTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Task1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/Task1Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Task2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/Task2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Task3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/Task3Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Task4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/Task4Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Task5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/Task5Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Task6Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/Task6Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Task7Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/Task7Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Task8Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/Task8Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Task9Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/Task9Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/ProgrammerBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/ProgrammerBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/com/vladuken/tests/AllTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/vladuken/tests/AllTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,19 +66,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8672" />
+          <entry key="java" value="10456" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8672" />
+          <entry key="JAVA" value="10456" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="60" />
+          <entry key="java" value="66" />
+          <entry key="txt" value="1" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
@@ -103,7 +89,8 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="60" />
+          <entry key="JAVA" value="66" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
@@ -116,37 +103,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task6/Task6.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task7/Task7.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task9/classes/Color.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task9/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,19 +114,92 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+            <state relative-caret-position="1716">
+              <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
               <folding>
                 <element signature="e#358#359#0" expanded="true" />
                 <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#1254#1255#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-                <element signature="e#1422#1423#0" expanded="true" />
-                <element signature="e#1473#1474#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#1381#1382#0" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#1542#1543#0" expanded="true" />
+                <element signature="e#1606#1607#0" expanded="true" />
+                <element signature="e#1646#1647#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookTitleComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#219#220#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookAuthorComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#151#152#0" expanded="true" />
+                <element signature="e#210#211#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/com/vladuken/tasks/Task12/BookComparatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-442">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookPriceComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/com/vladuken/tasks/Task12/BookTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -183,42 +216,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task12/ProgrammerBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="34">
+              <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/com/vladuken/tests/Task4Test.java">
+        <entry file="file://$PROJECT_DIR$/tests/com/vladuken/tests/AllTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task9/classes/Basket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="418">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding>
-                <element signature="method#countWeight#0;class#Basket#0" />
-                <element signature="method#countBallsWithColor#0;class#Basket#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task9/classes/Ball.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-              <folding>
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -229,8 +239,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -248,7 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task1.java" />
         <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task1Test.java" />
         <option value="$PROJECT_DIR$/src/tasks/Task1.java" />
         <option value="$PROJECT_DIR$/src/tasks/Task2.java" />
@@ -287,12 +296,19 @@
         <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/Ball.java" />
         <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/Basket.java" />
         <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/classes/App.java" />
-        <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/App.java" />
         <option value="$PROJECT_DIR$/tests/com/vladuken/tests/Task4Test.java" />
         <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/classes/Basket.java" />
         <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/classes/Ball.java" />
+        <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/App.java" />
+        <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task9/Manifest.txt" />
         <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/ProgrammerBook.java" />
+        <option value="$PROJECT_DIR$/tests/com/vladuken/tasks/Task12/BookTest.java" />
         <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Book.java" />
+        <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookTitleComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookAuthorComparator.java" />
+        <option value="$PROJECT_DIR$/tests/com/vladuken/tests/AllTest.java" />
+        <option value="$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookPriceComparator.java" />
+        <option value="$PROJECT_DIR$/tests/com/vladuken/tasks/Task12/BookComparatorTest.java" />
       </list>
     </option>
   </component>
@@ -303,7 +319,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="65" />
+    <option name="x" value="-1855" />
     <option name="y" value="24" />
     <option name="width" value="1853" />
     <option name="height" value="1056" />
@@ -345,17 +361,46 @@
               <item name="WTLab1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="Task9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WTLab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WTLab1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="Task12" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WTLab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WTLab1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="Task12" type="462c0819:PsiDirectoryNode" />
+              <item name="Comparators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WTLab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WTLab1" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WTLab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WTLab1" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="vladuken" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WTLab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WTLab1" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="vladuken" type="462c0819:PsiDirectoryNode" />
               <item name="Task12" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WTLab1" type="b2602c69:ProjectViewProjectNode" />
               <item name="WTLab1" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WTLab1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WTLab1" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="vladuken" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -392,7 +437,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537620781215" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537630829593" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -405,6 +450,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.vladuken.tasks.Task12" />
       <recent name="Task9" />
       <recent name="" />
       <recent name="com.vladuken.tasks" />
@@ -431,7 +477,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.AllTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.vladuken.tasks.Task9.App" />
       <module name="WTLab1" />
@@ -470,8 +516,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.AllTest" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.Task3Test" />
       </list>
     </recent_temporary>
@@ -489,44 +535,44 @@
       <workItem from="1537565608924" duration="2449000" />
       <workItem from="1537568322851" duration="21521000" />
       <workItem from="1537613215684" duration="34000" />
-      <workItem from="1537613806116" duration="6279000" />
+      <workItem from="1537613806116" duration="11704000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllTest - 2018.09.22 at 12h 11m 47s.xml">
+    <history-entry file="AllTest - 2018.09.22 at 18h 33m 43s.xml">
       <configuration name="AllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTest - 2018.09.22 at 12h 12m 36s.xml">
+    <history-entry file="AllTest - 2018.09.22 at 18h 34m 19s.xml">
       <configuration name="AllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTest - 2018.09.22 at 12h 13m 31s.xml">
+    <history-entry file="AllTest - 2018.09.22 at 18h 34m 47s.xml">
       <configuration name="AllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTest - 2018.09.22 at 12h 13m 40s.xml">
+    <history-entry file="AllTest - 2018.09.22 at 18h 35m 21s.xml">
       <configuration name="AllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTest - 2018.09.22 at 12h 14m 23s.xml">
+    <history-entry file="AllTest - 2018.09.22 at 18h 35m 53s.xml">
       <configuration name="AllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTest - 2018.09.22 at 12h 15m 16s.xml">
+    <history-entry file="AllTest - 2018.09.22 at 18h 36m 48s.xml">
       <configuration name="AllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTest - 2018.09.22 at 12h 15m 34s.xml">
+    <history-entry file="AllTest - 2018.09.22 at 18h 38m 26s.xml">
       <configuration name="AllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTest - 2018.09.22 at 12h 49m 17s.xml">
+    <history-entry file="AllTest - 2018.09.22 at 18h 38m 43s.xml">
       <configuration name="AllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTest - 2018.09.22 at 13h 13m 12s.xml">
+    <history-entry file="AllTest - 2018.09.22 at 18h 38m 54s.xml">
       <configuration name="AllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTest - 2018.09.22 at 14h 15m 52s.xml">
+    <history-entry file="AllTest - 2018.09.22 at 18h 39m 28s.xml">
       <configuration name="AllTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30283000" />
+    <option name="totallyTimeSpent" value="35708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,7 +587,7 @@
     <frame x="65" y="24" width="1853" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26175982" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26175982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -550,8 +596,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33836207" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39958158" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33836207" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39870688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294979" />
@@ -559,7 +605,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.21659483" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.3297414" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3297414" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2498618" />
@@ -704,16 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/com/vladuken/tests/AllTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task1/Task1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -777,16 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task9/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/com/vladuken/tests/Task4Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -823,24 +849,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task9/Manifest.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task9/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task12/ProgrammerBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="34">
+          <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        <state relative-caret-position="1716">
+          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
           <folding>
             <element signature="e#358#359#0" expanded="true" />
             <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/com/vladuken/tasks/Task12/BookTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/com/vladuken/tests/AllTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookPriceComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookTitleComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vladuken/tasks/Task12/Comparators/BookAuthorComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/com/vladuken/tasks/Task12/BookComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

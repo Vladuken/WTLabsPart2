@@ -1,23 +1,38 @@
 package com.vladuken.tasks.Task12;
 
-public class Book implements Cloneable {
+public class Book implements Cloneable,Comparable<Book> {
     private String title;
     private String author;
     private Integer price;
     private static Integer edition;
 
+    private Integer isbn;
+
     public Book(){}
 
-    public Book(String title, String author, Integer price){
+    public Book(String title, String author, Integer price,Integer isbn){
         this.title = title;
         this.author = author;
         this.price = price;
+        this.isbn = isbn;
     }
 
     public void setEdition(Integer edition){
         this.edition = edition;
     }
 
+    public String getTitle(){
+        return title;
+    }
+    public String getAuthor(){
+        return author;
+    }
+    public Integer getPrice(){
+        return price;
+    }
+    public Integer getIsbn(){
+        return isbn;
+    }
 
     public boolean equals(Book book) {
         if (this.title.equals(book.title) && this.author.equals(book.author)
@@ -57,7 +72,11 @@ public class Book implements Cloneable {
 
     @Override
     public Book clone(){
-        return new Book(title,author,price);
+        return new Book(title,author,price,isbn);
+    }
+
+    public int compareTo(Book book){
+         return  this.isbn - book.isbn;
     }
 
 

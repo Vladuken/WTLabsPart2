@@ -14,8 +14,15 @@ public class App {
                                     new Ball(1.4,Color.RED),
                                     new Ball(8.2,Color.RED));
 
+        Basket basket3 = new Basket(new Ball(0.5, Color.BLACK),
+                                    new Ball(1.4,Color.RED),
+                                    new Ball(8.2,Color.RED),
+                                    new Ball(2.7,Color.ORANGE),
+                                    new Ball(4.2,Color.RED));
+
         System.out.println(basket1);
         System.out.println(basket2);
+        System.out.println(basket3);
 
     }
 }
