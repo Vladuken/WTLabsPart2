@@ -5,7 +5,7 @@ import com.vladuken.tasks.Task9.classes.Basket;
 import com.vladuken.tasks.Task9.classes.Color;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class Task9Test {
 

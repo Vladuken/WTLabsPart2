@@ -1,11 +1,11 @@
 package com.vladuken.tests;
 
+import com.vladuken.tasks.Task7.unit.Task7;
 import org.junit.Test;
-import com.vladuken.tasks.Task7.Task7;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 public class Task7Test {
 

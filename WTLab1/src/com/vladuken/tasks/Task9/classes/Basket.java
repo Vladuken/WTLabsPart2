@@ -28,13 +28,14 @@ public class Basket {
 
     @Override
     public String toString(){
-        String res = "";
-        res += "Basket with " + ballList.size() + " balls\n";
-        for (Ball ball:ballList){
-            res += "    "+ ball + "\n";
-        }
-        res += "Total weight: " + countWeight();
+        StringBuilder res = new StringBuilder("");
+        res.append("Basket with " + ballList.size() + " balls\n");
 
-        return res;
+        for (Ball ball:ballList){
+            res.append("    "+ ball + "\n");
+        }
+        res.append("Total weight: " + countWeight());
+
+        return res.toString();
     }
 }

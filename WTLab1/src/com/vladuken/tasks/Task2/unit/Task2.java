@@ -1,8 +1,8 @@
-package com.vladuken.tasks.Task2;
+package com.vladuken.tasks.Task2.unit;
 
 public class Task2 {
 
-    public boolean isIn(double x, double y){
+    public static boolean isIn(double x, double y){
 
         boolean isin = false;
         if ((x <= 4 && x >= -4) && (y >= 0 && y <= 5)){

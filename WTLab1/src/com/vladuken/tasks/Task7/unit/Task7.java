@@ -1,10 +1,8 @@
-package com.vladuken.tasks.Task7;
-
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+package com.vladuken.tasks.Task7.unit;
 
 public class Task7 {
 
-    public double[] shellSort(double [] rawArray){
+    public static double[] shellSort(double [] rawArray){
         int inner,outer;
         double temp;
 

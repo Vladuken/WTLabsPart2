@@ -1,14 +1,13 @@
-package com.vladuken.tasks.Task12;
+package com.vladuken.tests;
 
 import com.vladuken.tasks.Task12.Comparators.BookAuthorComparator;
 import com.vladuken.tasks.Task12.Comparators.BookPriceComparator;
 import com.vladuken.tasks.Task12.Comparators.BookTitleComparator;
+import com.vladuken.tasks.Task12.unit.Book;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Comparator;
-
-import static org.junit.Assert.*;
 
 public class BookComparatorTest {
 

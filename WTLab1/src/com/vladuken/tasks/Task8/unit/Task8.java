@@ -1,17 +1,13 @@
-package com.vladuken.tasks.Task8;
+package com.vladuken.tasks.Task8.unit;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Task8 {
 
-    public Double[] mergeTwoArrays(Double[] firstArray,Double[] secondArray){
+    public static Double[] mergeTwoArrays(Double[] firstArray,Double[] secondArray){
 
 
         List<Double> firstList =  Arrays.asList(firstArray);

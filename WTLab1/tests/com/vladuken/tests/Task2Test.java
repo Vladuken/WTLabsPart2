@@ -1,9 +1,10 @@
 package com.vladuken.tests;
 
+import com.vladuken.tasks.Task2.unit.Task2;
 import org.junit.Test;
-import com.vladuken.tasks.Task2.Task2;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 
 public class Task2Test {
 

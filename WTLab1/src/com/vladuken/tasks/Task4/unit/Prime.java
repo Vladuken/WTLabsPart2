@@ -1,4 +1,4 @@
-package com.vladuken.tasks.Task4;
+package com.vladuken.tasks.Task4.unit;
 
 public class Prime {
     public static boolean isPrime(int number){

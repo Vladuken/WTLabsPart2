@@ -1,10 +1,8 @@
-package com.vladuken.tasks.Task5;
-
-import java.util.LinkedList;
+package com.vladuken.tasks.Task5.unit;
 
 public class Task5 {
 
-    public int findNumOfElementsToDelete(Integer[] array){
+    public static int findNumOfElementsToDelete(Integer[] array){
 
 
         int length = 0,maxlength=0;

@@ -1,4 +1,4 @@
-package com.vladuken.tasks.Task12;
+package com.vladuken.tasks.Task12.unit;
 
 public class Book implements Cloneable,Comparable<Book> {
     private String title;
@@ -61,8 +61,14 @@ public class Book implements Cloneable,Comparable<Book> {
 
     @Override
     public int hashCode() {
-        String res = "" + this.title + this.author + this.price;
-        return res.hashCode();
+        String res = this.toString();
+
+        int hash = 7;
+        for (int i = 0; i < res.length(); i++) {
+            hash = hash*31 + res.charAt(i);
+        }
+
+        return hash;
     }
 
     @Override
@@ -72,7 +78,11 @@ public class Book implements Cloneable,Comparable<Book> {
 
     @Override
     public Book clone(){
-        return new Book(title,author,price,isbn);
+        String copyTitle = new String(title);
+        String copyAuthor = new String(author);
+        Integer copyPrice = new Integer(price);
+        Integer copyIsbn = new Integer(isbn);
+        return new Book(copyTitle,copyAuthor,copyPrice,copyIsbn);
     }
 
     public int compareTo(Book book){

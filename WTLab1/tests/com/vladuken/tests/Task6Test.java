@@ -1,9 +1,9 @@
 package com.vladuken.tests;
 
+import com.vladuken.tasks.Task6.unit.Task6;
 import org.junit.Test;
-import com.vladuken.tasks.Task6.Task6;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 public class Task6Test {
 

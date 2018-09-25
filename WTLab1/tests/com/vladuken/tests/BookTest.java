@@ -1,11 +1,11 @@
-package com.vladuken.tasks.Task12;
+package com.vladuken.tests;
 
+import com.vladuken.tasks.Task12.unit.Book;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 public class BookTest {
 
@@ -18,5 +18,7 @@ public class BookTest {
         Book[] bookArray = new Book[]{book1,book2,book3};
         Arrays.sort(bookArray);
         assertArrayEquals(new Book[]{book2,book3,book1},bookArray);
+
+
     }
 }

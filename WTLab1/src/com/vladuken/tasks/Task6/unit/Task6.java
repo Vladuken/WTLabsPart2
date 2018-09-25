@@ -1,9 +1,9 @@
-package com.vladuken.tasks.Task6;
+package com.vladuken.tasks.Task6.unit;
 
 public class Task6 {
 
 
-    public int[][] getMatrixFromPlain(int[] array){
+    public static int[][] getMatrixFromPlain(int[] array){
 
         int[][] matrix = new int[array.length][array.length];
 

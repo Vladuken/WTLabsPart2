@@ -1,5 +1,7 @@
 package com.vladuken.tasks.Task12.Comparators;
-import  com.vladuken.tasks.Task12.Book;
+
+import com.vladuken.tasks.Task12.unit.Book;
+
 import java.util.Comparator;
 
 public class BookTitleComparator implements Comparator<Book> {
