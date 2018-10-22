@@ -3,14 +3,14 @@ package com.vladuken.entity;
 public class User {
     private int id;
     private String email;
-    private String passwordHash;
+    private String password;
 
     public User(){
     }
 
-    public User(String email, String passwordHash) {
+    public User(String email, String password) {
         this.email = email;
-        this.passwordHash = passwordHash;
+        this.password = password;
     }
 
     public int getId() {
@@ -29,12 +29,12 @@ public class User {
         this.email = email;
     }
 
-    public String getPasswordHash() {
-        return passwordHash;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPasswordHash(String passwordHash) {
-        this.passwordHash = passwordHash;
+    public void setPassword(String passwordHash) {
+        this.password = passwordHash;
     }
 
     @Override
@@ -46,14 +46,14 @@ public class User {
 
         if (id != user.id) return false;
         if (email != null ? !email.equals(user.email) : user.email != null) return false;
-        return passwordHash != null ? passwordHash.equals(user.passwordHash) : user.passwordHash == null;
+        return password != null ? password.equals(user.password) : user.password == null;
     }
 
     @Override
     public int hashCode() {
         int result = id;
         result = 31 * result + (email != null ? email.hashCode() : 0);
-        result = 31 * result + (passwordHash != null ? passwordHash.hashCode() : 0);
+        result = 31 * result + (password != null ? password.hashCode() : 0);
         return result;
     }
 
@@ -62,7 +62,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", email='" + email + '\'' +
-                ", passwordHash='" + passwordHash + '\'' +
+                ", passwordHash='" + password + '\'' +
                 '}';
     }
 }

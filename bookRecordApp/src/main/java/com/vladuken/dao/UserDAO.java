@@ -8,16 +8,16 @@ import java.util.List;
 public interface UserDAO {
 
     //create
-    void add(User user) throws SQLException;
+    void add(User user) throws SQLException, ClassNotFoundException;
 
     //read
-    List<User> getAll() throws SQLException;
+    List<User> getAll() throws SQLException,ClassNotFoundException;
 
-    User getById() throws SQLException;
+    User getById(int id) throws SQLException,ClassNotFoundException;
 
     //update
-    void update(User user) throws SQLException;
+    void update(User user) throws SQLException,ClassNotFoundException;
 
     //delete
-    void delete(User user) throws SQLException;
+    void delete(User user) throws SQLException,ClassNotFoundException;
 }

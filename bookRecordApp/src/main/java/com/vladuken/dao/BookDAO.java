@@ -7,16 +7,16 @@ import java.util.List;
 
 public interface BookDAO {
     //create
-    void add(Book book) throws SQLException;
+    void add(Book book) throws SQLException,ClassNotFoundException;
 
     //read
-    List<Book> getAll() throws SQLException;
+    List<Book> getAll() throws SQLException, ClassNotFoundException;
 
-    Book getById(int id) throws SQLException;
+    Book getById(int id) throws SQLException,ClassNotFoundException;
 
     //update
-    void update(Book book) throws SQLException;
+    void update(Book book) throws SQLException,ClassNotFoundException;
 
     //delete
-    void delete(Book book) throws SQLException;
+    void delete(Book book) throws SQLException,ClassNotFoundException;
 }

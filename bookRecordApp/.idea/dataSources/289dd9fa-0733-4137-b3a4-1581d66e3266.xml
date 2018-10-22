@@ -12,10 +12,8 @@
       <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
     </schema>
-    <schema id="3" parent="1" name="hrAppDatabase">
-      <Current>1</Current>
-      <Visible>1</Visible>
-      <Collation>latin1_swedish_ci</Collation>
+    <schema id="3" parent="1" name="hr_app_db">
+      <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="4" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
@@ -919,133 +917,91 @@
     </collation>
     <table id="230" parent="2" name="book"/>
     <table id="231" parent="2" name="user"/>
-    <table id="232" parent="3" name="user"/>
-    <column id="233" parent="230" name="id">
+    <column id="232" parent="230" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="234" parent="230" name="title">
+    <column id="233" parent="230" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="230" name="year">
+    <column id="234" parent="230" name="year">
       <Position>3</Position>
-      <DataType>year(4)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="236" parent="230" name="author">
+    <column id="235" parent="230" name="author">
       <Position>4</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="237" parent="230" name="type">
+    <column id="236" parent="230" name="type">
       <Position>5</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <DataType>enum(&apos;paperbook&apos;, &apos;ebook&apos;, &apos;audiobook&apos;)|0e</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="238" parent="230" name="book_id_uindex">
+    <index id="237" parent="230" name="book_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="239" parent="230" name="book_Title_uindex">
+    <index id="238" parent="230" name="book_Title_uindex">
       <ColNames>title</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="240" parent="230" name="PRIMARY">
+    <key id="239" parent="230" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="241" parent="230" name="book_id_uindex">
+    <key id="240" parent="230" name="book_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>book_id_uindex</UnderlyingIndexName>
     </key>
-    <key id="242" parent="230" name="book_Title_uindex">
+    <key id="241" parent="230" name="book_Title_uindex">
       <ColNames>title</ColNames>
       <UnderlyingIndexName>book_Title_uindex</UnderlyingIndexName>
     </key>
-    <column id="243" parent="231" name="id">
+    <column id="242" parent="231" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="231" name="email">
+    <column id="243" parent="231" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="231" name="password_hash">
+    <column id="244" parent="231" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="246" parent="231" name="user_email_uindex">
+    <index id="245" parent="231" name="user_email_uindex">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="247" parent="231" name="PRIMARY">
+    <key id="246" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="248" parent="231" name="user_email_uindex">
+    <key id="247" parent="231" name="user_email_uindex">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>user_email_uindex</UnderlyingIndexName>
-    </key>
-    <column id="249" parent="232" name="id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="250" parent="232" name="email">
-      <Position>2</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="251" parent="232" name="password">
-      <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="252" parent="232" name="name">
-      <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="253" parent="232" name="surname">
-      <Position>5</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="254" parent="232" name="user_id_uindex">
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
-    <key id="255" parent="232" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <key id="256" parent="232" name="user_id_uindex">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>user_id_uindex</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
