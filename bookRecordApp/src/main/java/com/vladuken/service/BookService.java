@@ -37,15 +37,7 @@ public class BookService implements BookDAO {
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         ResultSet resultSet = preparedStatement.executeQuery(sql);
         while(resultSet.next()){
-            Book book = new Book();
-
-            book.setId(resultSet.getInt("id"));
-            book.setTitle(resultSet.getString("title"));
-            book.setYear(resultSet.getInt("year"));
-            book.setAuthor(resultSet.getString("author"));
-            book.setType(resultSet.getString("type"));
-
-            bookList.add(book);
+            bookList.add(createBookFrom(resultSet));
         }
 
         free(preparedStatement);
@@ -61,16 +53,82 @@ public class BookService implements BookDAO {
 
         ResultSet resultSet = preparedStatement.executeQuery();
 
+        Book book = createBookFrom(resultSet);
+
+        //preparedStatement.executeUpdate();
+
+        free(preparedStatement);
+
+        return book;
+    }
+
+
+
+    public List<Book> getByTitle(String title) throws SQLException, ClassNotFoundException {
+        Connection connection = MySQLConnection.getConnection();
+        List<Book> bookList = new ArrayList<Book>();
+
+        String sql = "SELECT id, title, year, author, type from bookdatabase.book where title=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1,title);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while(resultSet.next()){
+            bookList.add(createBookFrom(resultSet));
+        }
+
+        free(preparedStatement);
+        return bookList;
+
+    }
+
+
+
+    public List<Book> getByAuthor(String author) throws SQLException, ClassNotFoundException {
+        Connection connection = MySQLConnection.getConnection();
+        List<Book> bookList = new ArrayList<Book>();
+
+        String sql = "SELECT id, title, year, author, type from bookdatabase.book where author=?";
+
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1,author);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while(resultSet.next()){
+            bookList.add(createBookFrom(resultSet));
+        }
+
+        free(preparedStatement);
+        return bookList;
+    }
+
+    public List<Book> getByYear(int year) throws SQLException, ClassNotFoundException {
+        Connection connection = MySQLConnection.getConnection();
+        List<Book> bookList = new ArrayList<Book>();
+
+        String sql = "SELECT id, title, year, author, type from bookdatabase.book where year=?";
+
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setInt(1,year);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        while(resultSet.next()){
+            bookList.add(createBookFrom(resultSet));
+        }
+
+        free(preparedStatement);
+        return bookList;
+    }
+
+    public Book createBookFrom(ResultSet resultSet) throws SQLException{
         Book book = new Book();
+
         book.setId(resultSet.getInt("id"));
         book.setTitle(resultSet.getString("title"));
         book.setYear(resultSet.getInt("year"));
         book.setAuthor(resultSet.getString("author"));
         book.setType(resultSet.getString("type"));
-
-        //preparedStatement.executeUpdate();
-
-        free(preparedStatement);
 
         return book;
     }
@@ -97,7 +155,6 @@ public class BookService implements BookDAO {
         Connection connection = MySQLConnection.getConnection();
 
         String sql = "DELETE FROM bookdatabase.book WHERE id=?";
-
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         preparedStatement.setInt(1,book.getId());
         preparedStatement.executeUpdate();

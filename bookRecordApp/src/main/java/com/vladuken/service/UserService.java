@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserService extends MySQLConnection implements UserDAO {
+public class UserService implements UserDAO {
 
     public void add(User user) throws SQLException,ClassNotFoundException {
         Connection connection = MySQLConnection.getConnection();
@@ -75,6 +75,50 @@ public class UserService extends MySQLConnection implements UserDAO {
         return user;
     }
 
+    public User getByEmail(String email) throws SQLException, ClassNotFoundException {
+        Connection connection = MySQLConnection.getConnection();
+
+        String sql = "SELECT id, email, password from bookdatabase.user where email=?";
+
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1,email);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        User user = new User();
+        user.setId(resultSet.getInt("id"));
+        user.setEmail(resultSet.getString("email"));
+        user.setPassword(resultSet.getString("password"));
+
+        //preparedStatement.executeUpdate();
+
+        free(preparedStatement);
+
+        return user;
+    }
+
+    public User getByPassword(String password) throws SQLException, ClassNotFoundException {
+        Connection connection = MySQLConnection.getConnection();
+
+        String sql = "SELECT id, email, password from bookdatabase.user where password=?";
+
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1,password);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        User user = new User();
+        user.setId(resultSet.getInt("id"));
+        user.setEmail(resultSet.getString("email"));
+        user.setPassword(resultSet.getString("password"));
+
+        //preparedStatement.executeUpdate();
+
+        free(preparedStatement);
+
+        return user;
+    }
+
     public void update(User user) throws SQLException,ClassNotFoundException {
         Connection connection = MySQLConnection.getConnection();
 
@@ -102,6 +146,7 @@ public class UserService extends MySQLConnection implements UserDAO {
 
         free(preparedStatement);
     }
+
 
     public void free(PreparedStatement preparedStatement) throws SQLException{
         if(preparedStatement!= null)
