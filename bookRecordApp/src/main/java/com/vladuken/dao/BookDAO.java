@@ -1,22 +1,15 @@
 package com.vladuken.dao;
 
 import com.vladuken.entity.Book;
+import com.vladuken.exceptions.DAOException;
 
 import java.sql.SQLException;
 import java.util.List;
 
-public interface BookDAO {
-    //create
-    void add(Book book) throws SQLException,ClassNotFoundException;
+public interface BookDAO extends CRUDDAO<Book> {
+    List<Book> getByTitle(String title) throws DAOException;
 
-    //read
-    List<Book> getAll() throws SQLException, ClassNotFoundException;
+    List<Book> getByAuthor(String author) throws DAOException;
 
-    Book getById(int id) throws SQLException,ClassNotFoundException;
-
-    //update
-    void update(Book book) throws SQLException,ClassNotFoundException;
-
-    //delete
-    void delete(Book book) throws SQLException,ClassNotFoundException;
+    List<Book> getByYear(int year) throws DAOException;
 }

@@ -1,4 +1,4 @@
-package com.vladuken.scanner;
+package com.vladuken.util.scanner;
 
 import java.util.Scanner;
 
