@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea6557b3-bcd2-4b7e-9c1d-f5d96d0d27cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/dao/CRUDDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/exceptions/DAOException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/vladuken/service/BookMySQLServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vladuken/util/MD5Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/289dd9fa-0733-4137-b3a4-1581d66e3266.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/289dd9fa-0733-4137-b3a4-1581d66e3266.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookRecordApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bookRecordApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/datalayer/MySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/datalayer/MySQLConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/ConsoleView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/service/BookMySQLService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/service/UserMySQLService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/util/scanner/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/util/scanner/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vladuken/service/BookServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/service/BookMySQLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/service/BookMySQLService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/service/UserMySQLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/service/UserMySQLService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vladuken/util/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vladuken/util/MD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vladuken/datalayer/MySQLConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vladuken/datalayer/MySQLConnectionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,6 +51,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="bookdatabase: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bookdatabase: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="book: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -128,26 +133,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="book" value="1" />
           <entry key="class" value="2" />
-          <entry key="java" value="23" />
+          <entry key="java" value="33" />
+          <entry key="user" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="23" />
+          <entry key="Database Element" value="3" />
+          <entry key="JAVA" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="3663" />
+          <entry key="java" value="8639" />
+          <entry key="sql" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3663" />
+          <entry key="JAVA" value="8639" />
           <entry key="PLAIN_TEXT" value="14" />
+          <entry key="SQL" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -161,17 +171,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/ConsoleView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/dao/BookDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+            <state relative-caret-position="132">
+              <caret line="245" column="44" selection-start-line="245" selection-start-column="44" selection-end-line="245" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,30 +181,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/util/scanner/Reader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <entry file="das://289dd9fa-0733-4137-b3a4-1581d66e3266/schema/bookdatabase/table/user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/util/MD5.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <entry file="das://289dd9fa-0733-4137-b3a4-1581d66e3266/schema/bookdatabase/table/book">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/datalayer/MySQLConnection.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/service/BookMySQLService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+            <state relative-caret-position="438">
+              <caret line="172" selection-start-line="172" selection-end-line="172" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1230#1236#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,26 +214,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/service/UserMySQLService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/entity/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/service/BookMySQLService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+            <state relative-caret-position="399">
+              <caret line="32" selection-start-line="32" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -259,13 +243,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/dao/UserDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/dao/BookDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="330">
+              <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/entity/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -276,8 +269,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -294,23 +287,26 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/289dd9fa-0733-4137-b3a4-1581d66e3266/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/entity/Book.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/vladuken/service/BookServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/vladuken/datalayer/MySQLConnectionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/service/BookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladuken/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/Reader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/util/scanner/Reader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/ConsoleView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/vladuken/service/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/vladuken/service/BookMySQLServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladuken/dao/BookDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/dao/CRUDDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/exceptions/DAOException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladuken/service/BookMySQLService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/datalayer/MySQLConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladuken/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vladuken/datalayer/MySQLConnectionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vladuken/util/MD5Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladuken/util/MD5.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladuken/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladuken/dao/BookDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladuken/service/UserMySQLService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladuken/service/BookMySQLService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/ConsoleView.java" />
       </list>
     </option>
   </component>
@@ -449,16 +445,6 @@
               <item name="bookRecordApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="bookRecordApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vladuken" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="scanner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bookRecordApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bookRecordApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -493,6 +479,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vladuken" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookRecordApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookRecordApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vladuken" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bookRecordApp" type="b2602c69:ProjectViewProjectNode" />
@@ -566,7 +561,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540393076008" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540408538363" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -578,6 +573,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.vladuken.util" />
       <recent name="com.vladuken.service" />
       <recent name="com.vladuken.datalayer" />
     </key>
@@ -603,13 +599,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MySQLConnectionTest">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vladuken.Main" />
+      <module name="bookRecordApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vladuken.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.vladuken.presentationlayer.Main" />
       <module name="bookRecordApp" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MD5Test.getMD5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bookRecordApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vladuken.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vladuken.util" />
+      <option name="MAIN_CLASS_NAME" value="com.vladuken.util.MD5Test" />
+      <option name="METHOD_NAME" value="getMD5" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -644,34 +669,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MySQLConnectionTest.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bookRecordApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vladuken.datalayer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.vladuken.datalayer" />
-      <option name="MAIN_CLASS_NAME" value="com.vladuken.datalayer.MySQLConnectionTest" />
-      <option name="METHOD_NAME" value="getConnection" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.MySQLConnectionTest.getConnection" />
       <item itemvalue="JUnit.MySQLConnectionTest.close" />
       <item itemvalue="JUnit.MySQLConnectionTest" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="JUnit.MD5Test.getMD5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="JUnit.MD5Test.getMD5" />
         <item itemvalue="JUnit.MySQLConnectionTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MySQLConnectionTest.close" />
-        <item itemvalue="JUnit.MySQLConnectionTest.getConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -691,7 +702,7 @@
       <workItem from="1540234199533" duration="3426000" />
       <workItem from="1540305694407" duration="598000" />
       <workItem from="1540366631239" duration="893000" />
-      <workItem from="1540387039254" duration="4479000" />
+      <workItem from="1540387039254" duration="16906000" />
     </task>
     <servers />
   </component>
@@ -711,15 +722,20 @@
     <history-entry file="MySQLConnectionTest - 2018.10.24 at 17h 04m 27s.xml">
       <configuration name="MySQLConnectionTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MySQLConnectionTest - 2018.10.24 at 18h 18m 20s.xml">
+      <configuration name="MySQLConnectionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MD5Test_getMD5 - 2018.10.24 at 19h 27m 12s.xml">
+      <configuration name="MD5Test.getMD5" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23355000" />
+    <option name="totallyTimeSpent" value="35782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22056384" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18905473" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -728,15 +744,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32985386" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32985386" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32985386" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3294979" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3294979" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3294979" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -744,7 +760,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.16086236" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.102266446" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.2443339" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32946378" />
@@ -756,6 +772,24 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/ConsoleView.java</url>
+          <line>268</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/ConsoleView.java</url>
+          <line>252</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -764,24 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://289dd9fa-0733-4137-b3a4-1581d66e3266/schema/bookdatabase/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/289dd9fa-0733-4137-b3a4-1581d66e3266/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="55" selection-start-column="55" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://289dd9fa-0733-4137-b3a4-1581d66e3266/schema/bookdatabase/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -794,20 +814,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/Reader.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/sql/SQLException.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -829,27 +835,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/vladuken/datalayer/MySQLConnectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/vladuken/service/BookMySQLServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/dao/CRUDDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -866,16 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/dao/BookDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/util/scanner/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-225">
@@ -883,10 +862,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/datalayer/MySQLConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/dao/CRUDDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/util/MD5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="509">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vladuken/util/MD5Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="86" selection-start-line="11" selection-start-column="86" selection-end-line="11" selection-end-column="86" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vladuken/datalayer/MySQLConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -894,6 +928,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/dao/BookDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/service/UserMySQLService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="32" selection-start-line="32" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -914,37 +968,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/datalayer/MySQLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="das://289dd9fa-0733-4137-b3a4-1581d66e3266/schema/bookdatabase/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://289dd9fa-0733-4137-b3a4-1581d66e3266/schema/bookdatabase/table/book">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/service/BookMySQLService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+        <state relative-caret-position="438">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1230#1236#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/service/UserMySQLService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladuken/presentationlayer/ConsoleView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="132">
+          <caret line="245" column="44" selection-start-line="245" selection-start-column="44" selection-end-line="245" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -952,54 +952,47 @@
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="238" parent="230" name="book_Title_uindex">
-      <ColNames>title</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
-    <key id="239" parent="230" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <key id="240" parent="230" name="book_id_uindex">
+    <key id="238" parent="230" name="book_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>book_id_uindex</UnderlyingIndexName>
     </key>
-    <key id="241" parent="230" name="book_Title_uindex">
-      <ColNames>title</ColNames>
-      <UnderlyingIndexName>book_Title_uindex</UnderlyingIndexName>
-    </key>
-    <column id="242" parent="231" name="id">
+    <column id="239" parent="231" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="231" name="email">
+    <column id="240" parent="231" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="231" name="password">
+    <column id="241" parent="231" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="245" parent="231" name="user_email_uindex">
+    <column id="242" parent="231" name="status">
+      <Position>4</Position>
+      <DataType>enum(&apos;admin&apos;, &apos;user&apos;)|0e</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;user&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="243" parent="231" name="user_email_uindex">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="246" parent="231" name="PRIMARY">
+    <key id="244" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="247" parent="231" name="user_email_uindex">
+    <key id="245" parent="231" name="user_email_uindex">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>user_email_uindex</UnderlyingIndexName>
     </key>

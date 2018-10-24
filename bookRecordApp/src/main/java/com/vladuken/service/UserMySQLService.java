@@ -17,13 +17,14 @@ public class UserMySQLService implements UserDAO {
     public void add(User user) throws DAOException {
         Connection connection = MySQLConnection.getConnection();
 
-        String sql = "INSERT INTO bookdatabase.user (email, password) VALUES (?, ?)";
+        String sql = "INSERT INTO bookdatabase.user (email, password,status) VALUES (?, ?, ?)";
 
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             preparedStatement.setString(1,user.getEmail());
             preparedStatement.setString(2,user.getPassword());
+            preparedStatement.setString(3,user.getStatus());
 
             preparedStatement.executeUpdate();
 
@@ -38,7 +39,7 @@ public class UserMySQLService implements UserDAO {
 
         List<User> userList = new ArrayList<User>();
 
-        String sql = "SELECT id, email, password from bookdatabase.user";
+        String sql = "SELECT id, email, password, status from bookdatabase.user";
 
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -49,7 +50,7 @@ public class UserMySQLService implements UserDAO {
                 user.setId(resultSet.getInt("id"));
                 user.setEmail(resultSet.getString("email"));
                 user.setPassword(resultSet.getString("password"));
-
+                user.setStatus(resultSet.getString("status"));
                 userList.add(user);
             }
 
@@ -64,7 +65,7 @@ public class UserMySQLService implements UserDAO {
     public User getById(int id) throws DAOException {
         Connection connection = MySQLConnection.getConnection();
 
-        String sql = "SELECT id, email, password from bookdatabase.user where id=?";
+        String sql = "SELECT id, email, password, status from bookdatabase.user where id=?";
 
         User user;
         try {
@@ -77,6 +78,7 @@ public class UserMySQLService implements UserDAO {
             user.setId(resultSet.getInt("id"));
             user.setEmail(resultSet.getString("email"));
             user.setPassword(resultSet.getString("password"));
+            user.setStatus(resultSet.getString("status"));
 
             //preparedStatement.executeUpdate();
 
@@ -91,7 +93,7 @@ public class UserMySQLService implements UserDAO {
     public User getByEmail(String email) throws DAOException {
         Connection connection = MySQLConnection.getConnection();
 
-        String sql = "SELECT id, email, password from bookdatabase.user where email=?";
+        String sql = "SELECT id, email, password, status from bookdatabase.user where email=?";
         User user = getUserFromSQL(sql,email);
 
         return user;
@@ -100,7 +102,7 @@ public class UserMySQLService implements UserDAO {
     public User getByPassword(String password) throws DAOException {
         Connection connection = MySQLConnection.getConnection();
 
-        String sql = "SELECT id, email, password from bookdatabase.user where password=?";
+        String sql = "SELECT id, email, password, status from bookdatabase.user where password=?";
 
         User user = getUserFromSQL(sql,password);
         return user;
@@ -115,16 +117,18 @@ public class UserMySQLService implements UserDAO {
             preparedStatement.setString(1, param);
 
             ResultSet resultSet = preparedStatement.executeQuery();
+            resultSet.next();
             user = new User();
             user.setId(resultSet.getInt("id"));
             user.setEmail(resultSet.getString("email"));
             user.setPassword(resultSet.getString("password"));
+            user.setStatus(resultSet.getString("status"));
 
             //preparedStatement.executeUpdate();
 
             free(preparedStatement);
         } catch (SQLException e) {
-            throw new DAOException("Get by password error", e);
+            throw new DAOException("Get user error", e);
         }
         return user;
     }
@@ -132,7 +136,7 @@ public class UserMySQLService implements UserDAO {
     public void update(User user) throws DAOException {
         Connection connection = MySQLConnection.getConnection();
 
-        String sql = "UPDATE bookdatabase.user SET id=? email=? password=?";
+        String sql = "UPDATE bookdatabase.user SET id=? email=? password=? status=?";
 
         try{
 
@@ -141,6 +145,7 @@ public class UserMySQLService implements UserDAO {
             preparedStatement.setInt(1,user.getId());
             preparedStatement.setString(2,user.getEmail());
             preparedStatement.setString(3,user.getPassword());
+            preparedStatement.setString(4,user.getStatus());
 
             preparedStatement.executeUpdate();
 
@@ -168,7 +173,7 @@ public class UserMySQLService implements UserDAO {
     }
 
 
-    public void free(PreparedStatement preparedStatement) throws DAOException{
+    private void free(PreparedStatement preparedStatement) throws DAOException{
         if(preparedStatement!= null)
             try{
                 preparedStatement.close();

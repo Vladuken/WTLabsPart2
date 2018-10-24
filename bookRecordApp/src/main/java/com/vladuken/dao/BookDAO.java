@@ -12,4 +12,6 @@ public interface BookDAO extends CRUDDAO<Book> {
     List<Book> getByAuthor(String author) throws DAOException;
 
     List<Book> getByYear(int year) throws DAOException;
+
+    List<Book> getByPage(int pageId, int pageSize) throws DAOException;
 }

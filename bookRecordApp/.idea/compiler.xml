@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="bookRecordApp" target="7" />
+      <module name="bookRecordApp" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

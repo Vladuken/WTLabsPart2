@@ -28,7 +28,7 @@ public class BookMySQLService implements BookDAO {
 
             free(preparedStatement);
         } catch (SQLException e) {
-            throw new DAOException("SQL statement error", e);
+            throw new DAOException("Book add error", e);
         }
     }
 
@@ -48,7 +48,7 @@ public class BookMySQLService implements BookDAO {
 
             free(preparedStatement);
         }catch (SQLException e){
-            throw new DAOException("SQL statement error", e);
+            throw new DAOException("Get booklist error", e);
         }
 
         return bookList;
@@ -65,20 +65,18 @@ public class BookMySQLService implements BookDAO {
             preparedStatement.setInt(1, id);
 
             ResultSet resultSet = preparedStatement.executeQuery();
-
+            resultSet.next();
             book = createBookFrom(resultSet);
 
             //preparedStatement.executeUpdate();
 
             free(preparedStatement);
         } catch (SQLException e) {
-            throw new DAOException("SQL statement error", e);
+            throw new DAOException("Get book by id error", e);
         }
 
         return book;
     }
-
-
 
     public List<Book> getByTitle(String title) throws DAOException {
         String sql = "SELECT id, title, year, author, type from bookdatabase.book where title=?";
@@ -111,7 +109,7 @@ public class BookMySQLService implements BookDAO {
 
             free(preparedStatement);
         }catch (SQLException e){
-            throw new DAOException("SQL statement error", e);
+            throw new DAOException("Get booklist error", e);
         }
         return bookList;
     }
@@ -135,17 +133,16 @@ public class BookMySQLService implements BookDAO {
 
             free(preparedStatement);
         }catch (SQLException e){
-            throw new DAOException("SQL statement error", e);
+            throw new DAOException("Get book ny year error", e);
         }
 
         return bookList;
     }
 
-    public Book createBookFrom(ResultSet resultSet) throws DAOException{
+    private Book createBookFrom(ResultSet resultSet) throws DAOException{
         Book book = new Book();
 
         try{
-
             book.setId(resultSet.getInt("id"));
             book.setTitle(resultSet.getString("title"));
             book.setYear(resultSet.getInt("year"));
@@ -161,17 +158,17 @@ public class BookMySQLService implements BookDAO {
     public void update(Book book) throws DAOException{
         Connection connection = MySQLConnection.getConnection();
 
-        String sql = "UPDATE bookdatabase.book SET id=? title=? year=? author=? type=?";
+        String sql = "UPDATE bookdatabase.book SET title=?, year=?, author=?, type=? WHERE id=?";
 
         try{
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
-            preparedStatement.setInt(1,book.getId());
-            preparedStatement.setString(2,book.getTitle());
-            preparedStatement.setInt(3,book.getYear());
-            preparedStatement.setString(4,book.getAuthor());
-            preparedStatement.setString(5,book.getType());
+            preparedStatement.setString(1,book.getTitle());
+            preparedStatement.setInt(2,book.getYear());
+            preparedStatement.setString(3,book.getAuthor());
+            preparedStatement.setString(4,book.getType());
+            preparedStatement.setInt(5,book.getId());
 
             preparedStatement.executeUpdate();
 
@@ -197,6 +194,33 @@ public class BookMySQLService implements BookDAO {
             throw new DAOException("SQL statement error", e);
         }
 
+    }
+
+    public List<Book> getByPage(int pageId, int pageSize) throws DAOException {
+        Connection connection = MySQLConnection.getConnection();
+        String sql="SELECT * from bookdatabase.book LIMIT "+pageId*pageSize+","+pageSize;
+
+        ResultSet resultSet;
+        List<Book> books = new ArrayList<>();
+        try {
+            Statement statement = connection.createStatement();
+            resultSet = statement.executeQuery(sql);
+            while (resultSet.next()){
+                Book book = new Book();
+
+                book.setId(resultSet.getInt("id"));
+                book.setTitle(resultSet.getString("title"));
+                book.setYear(resultSet.getInt("year"));
+                book.setAuthor(resultSet.getString("author"));
+                book.setType(resultSet.getString("type"));
+
+                books.add(book);
+            }
+        } catch (SQLException e) {
+            throw new DAOException("Get list by page error",e);
+        }
+
+        return books;
     }
 
     public void free(PreparedStatement preparedStatement) throws DAOException{

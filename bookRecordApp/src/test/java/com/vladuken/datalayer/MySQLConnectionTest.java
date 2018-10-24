@@ -1,5 +1,6 @@
 package com.vladuken.datalayer;
 
+import com.vladuken.exceptions.DAOException;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,13 +12,13 @@ import static org.junit.Assert.*;
 public class MySQLConnectionTest {
 
     @Test
-    public void getConnection() throws SQLException,ClassNotFoundException {
+    public void getConnection() throws DAOException {
         Connection connection = MySQLConnection.getConnection();
     }
 
 
     @Test
-    public void close() throws SQLException,ClassNotFoundException{
+    public void close() throws DAOException{
         Connection connection = MySQLConnection.getConnection();
         MySQLConnection.close(connection);
     }

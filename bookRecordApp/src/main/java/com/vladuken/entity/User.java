@@ -4,6 +4,9 @@ public class User {
     private int id;
     private String email;
     private String password;
+    private String status;
+
+
 
     public User(){
     }
@@ -36,6 +39,10 @@ public class User {
     public void setPassword(String passwordHash) {
         this.password = passwordHash;
     }
+
+    public String getStatus() { return status; }
+
+    public void setStatus(String state) { this.status = state; }
 
     @Override
     public boolean equals(Object o) {
